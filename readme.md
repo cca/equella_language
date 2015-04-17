@@ -11,3 +11,7 @@ Run `make` within this project to create the language pack zip file.
 - Upload language pack: https://vault.cca.edu/access/language.do
 - Reference pack: https://neoconnect.pearson.com/docs/DOC-27853
 - Language pack documentation: http://support.thelearningedge.com.au/downloads/6.0/Documentation/EQUELLA%206.0%20Language%20Settings%20Configuration%20Guide%20.pdf
+
+## LICENSE
+
+[Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
