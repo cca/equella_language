@@ -4,7 +4,7 @@ Our en_US language pack for EQUELLA. Many Australian spellings changed to US Eng
 
 ## Building
 
-Run `make` within this project to create the language pack zip file.
+Run `make` within this project to create the language pack zip file. `make open` will open the language pack upload URL.
 
 ## Links
 
