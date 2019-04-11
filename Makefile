@@ -3,10 +3,10 @@ zipfile = language-pack-en_US.zip
 all: makezip
 
 makezip:
-	zip $(zipfile) *.properties resource-centre.xml
+	zip $(zipfile) pack/*
 
 open:
 	open https://vault.cca.edu/access/language.do
 
 min:
-	uglifyjs improved-login.js --screw-ie8 -m -c > improved-login.min.js
+	uglifyjs improved-login.js --screw-ie8 -m -c > dist/improved-login.min.js

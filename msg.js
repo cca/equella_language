@@ -9,7 +9,7 @@ var classlist = 'alert'
 var msg = args[1]
 var welcomemsg = 'Welcome to CCA VAULT'
 var html = ''
-var filename = 'resource-centre.properties'
+var filename = 'pack/resource-centre.properties'
 var isDelete = (flag === 'delete' || flag === 'd'  || flag === 'remove')
 
 if (flag === 'help' || flag === 'h') {
@@ -19,7 +19,6 @@ if (flag === 'help' || flag === 'h') {
     console.error('Error: must provide text for a message.')
     process.exit(1)
 } else if (flag === 'error') {
-    // new ES6 string interpolation, bomb diggity
     html = welcomemsg + `<br><br><p class="alert alert-error">${msg}</p>`
 } else if (flag === 'alert') {
     html = welcomemsg + `<br><br><p class="alert">${msg}</p>`
