@@ -3,7 +3,7 @@ zipfile = language-pack-en_US.zip
 all: makezip
 
 makezip:
-	zip $(zipfile) pack/*
+	cd pack; zip $(zipfile) *
 
 open:
 	open https://vault.cca.edu/access/language.do
