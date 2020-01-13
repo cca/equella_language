@@ -1,0 +1,22 @@
+{
+  "name": "equella-language",
+  "version": "1.0.0",
+  "description": "Our en_US language pack for EQUELLA. Many Australian spellings changed to US English ones, various unclear verbiage changed, minor corrections.",
+  "main": "disable-cloud.js",
+  "scripts": {
+    "open": "open https://vault.cca.edu/access/language.do",
+    "zip": "cd pack; zip language-pack-en_US.zip *",
+    "minify": "uglifyjs improved-login.js --screw-ie8 -m -c -o dist/improved-login.min.js",
+    "all": "npm run zip; npm run open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cca/equella_language"
+  },
+  "author": "phette23 <phette23@gmail.com> (http://phette.net)",
+  "license": "ECL-2.0",
+  "devDependencies": {
+    "uglify-js": "^3.7.5",
+    "uglifyjs": "^2.4.11"
+  }
+}

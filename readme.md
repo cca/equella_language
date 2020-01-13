@@ -4,7 +4,7 @@ Our en_US language pack for EQUELLA. Many Australian spellings changed to US Eng
 
 ## Building
 
-Run `make` within this project to create the language pack zip file. `make open` will open the language pack upload URL.
+Run `npm run zip` within this project to create the language pack zip file. `npm run open` will open the language pack upload URL.
 
 To confirm that the edits applied OK, it can be helpful to edit the very first string in resource-centre.properties `com.tle.web.language.langpack.subheading` by adding the hash of the last commit in this repo (e.g. `git rev-parse --short HEAD`). You'll see the heading update and know that the latest language pack has been applied.
 
