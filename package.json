@@ -16,7 +16,8 @@
   "author": "phette23 <phette23@gmail.com> (http://phette.net)",
   "license": "ECL-2.0",
   "devDependencies": {
-    "uglify-js": "^3.7.5",
-    "uglifyjs": "^2.4.11"
+    "async": "^3.1.0",
+    "properties": "^1.2.1",
+    "uglify-js": "^3.7.5"
   }
 }
