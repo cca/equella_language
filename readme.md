@@ -1,18 +1,18 @@
 # EQUELLA Language Pack
 
-Our en_US language pack for openEQUELLA. Many Australian spellings changed to US English ones, various unclear verbiage changed, branding changed to "VAULT", minor corrections.
+Our en_US language pack for [openEQUELLA](https://openequella.github.io/). Many Australian spellings changed to US English ones, various unclear verbiage changed, branding changed to "VAULT", minor corrections, and a couple JavaScript hacks.
 
 ## Building
 
-Run `npm run zip` within this project to create the language pack zip file. `npm run open` will open the language pack upload URL.
+Run `npm run zip` within this project to create the language pack zip file in a "dist" directory. `npm run open` will open the language pack upload URL for VAULT.
 
-To confirm that the edits applied OK, it can be helpful to edit the very first string in resource-centre.properties `com.equella.core.langpack.subheading` by adding the hash of the last commit in this repo (e.g. `git rev-parse --short HEAD`). You'll see the heading update and know that the latest language pack has been applied.
+To confirm that the edits applied OK, it can be helpful to edit `com.equella.core.langpack.subheading` in resource-centre.properties by adding the hash of the last commit in this repo (e.g. `git rev-parse --short HEAD`). You'll see the heading update and know that the latest language pack has been applied.
 
 ## Updating
 
 openEQUELLA may introduce language pack changes with new versions. I've written a basic script `property-changes.js` to try to identify what properties have been added/removed/edited, since there is no official source for this information. `npm install` will download its dependencies.
 
-In order for property-changes to work, you need to download a copy of the reference language pack for the version you're targeting (locafted in the "reference" directory in the following example). Then you can run `node property-change.js reference/admin-console.properties pack/admin-console.properties` to see a list of changes you may need to address. If there are numerous differences between the two property files, then you will need to alternate running the script and making changes until there is no output, since the script only prints the first hundred entries in the removed/added properties arrays.
+In order for property-changes to work, you need to download a copy of the reference language pack for the version you're targeting (located in the "reference" directory in the following example). Then you can run `node property-change.js reference/admin-console.properties pack/admin-console.properties` to see a list of changes you may need to address for a particular file. If there are numerous differences between the two property files, then you will need to alternate running the script and making changes until there is no output, since the script only prints the first hundred entries in the removed/added properties arrays. The script could be easily modified to check for language pack values that have changed as well (see the commented out section at the bottom of the `analyzeDifferences` function).
 
 ## JS Hacks
 
@@ -26,7 +26,7 @@ For new hacks going forward that don't have a particular suitable location, we'l
 ## Links
 
 - Upload language pack: https://vault.cca.edu/access/language.do
-- Language pack documentation: https://equella.github.io/guides/LanguageSettingsConfigurationGuide.html
+- Language pack documentation: https://openequella.github.io/guides/LanguageSettingsConfigurationGuide.html
 
 ## LICENSE
 
