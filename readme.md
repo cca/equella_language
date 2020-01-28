@@ -6,7 +6,7 @@ Our en_US language pack for [openEQUELLA](https://openequella.github.io/). Many 
 
 Run `npm run zip` within this project to create the language pack zip file in a "dist" directory. `npm run open` will open the language pack upload URL for VAULT.
 
-To confirm that the edits applied OK, it can be helpful to edit `com.equella.core.langpack.subheading` in resource-centre.properties by adding the hash of the last commit in this repo (e.g. `git rev-parse --short HEAD`). You'll see the heading update and know that the latest language pack has been applied.
+To confirm that changes applied OK, it can be helpful to add the hash of the last commit (e.g. `git rev-parse --short HEAD`) to `com.equella.core.langpack.subheading` in resource-centre.properties. You'll see the heading update and know that the latest language pack was applied. I've provided a pre-commit git hook that performs this edit; you can activate it by putting the script in git's "hooks" directory i.e. `cp pre-commit .git/hooks`. Note that it always adds resource-centre.properties to the files being committed so don't use it if you intend to keep a dirty copy of that file in between commits.
 
 ## Updating
 

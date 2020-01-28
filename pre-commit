@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, move it to .git/hooks
+
+# Before we commit, edit the hash of the last commit into the langpack
+# subheading, which makes it easy to see that our changes applied.
+HASH=$(git rev-parse --short HEAD | tr -d '\n')
+sed -i '' "s/\(com.equella.core.langpack.subheading=.*\) (.*)/\1 (${HASH})/g" pack/resource-centre.properties
+git add pack/resource-centre.properties
