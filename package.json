@@ -5,7 +5,7 @@
   "main": "disable-cloud.js",
   "scripts": {
     "open": "open https://vault.cca.edu/access/language.do",
-    "zip": "cd pack; zip ../dist/language-pack-en_US.zip *",
+    "zip": "mkdir -p dist; cd pack; zip ../dist/language-pack-en_US.zip *",
     "minify": "uglifyjs improved-login.js --screw-ie8 -m -c -o dist/improved-login.min.js",
     "all": "npm run zip; npm run open"
   },
