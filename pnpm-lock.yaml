@@ -1,0 +1,28 @@
+lockfileVersion: 5.4
+
+specifiers:
+  async: ^3.1.0
+  properties: ^1.2.1
+  uglify-js: ^3.7.5
+
+devDependencies:
+  async: 3.2.2
+  properties: 1.2.1
+  uglify-js: 3.14.4
+
+packages:
+
+  /async/3.2.2:
+    resolution: {integrity: sha512-H0E+qZaDEfx/FY4t7iLRv1W2fFI6+pyCeTw1uN20AQPiwqwM6ojPxHxdLv4z8hi2DtnW9BOckSspLucW7pIE5g==}
+    dev: true
+
+  /properties/1.2.1:
+    resolution: {integrity: sha512-qYNxyMj1JeW54i/EWEFsM1cVwxJbtgPp8+0Wg9XjNaK6VE/c4oRi6PNu5p7w1mNXEIQIjV5Wwn8v8Gz82/QzdQ==}
+    engines: {node: '>=0.10'}
+    dev: true
+
+  /uglify-js/3.14.4:
+    resolution: {integrity: sha512-AbiSR44J0GoCeV81+oxcy/jDOElO2Bx3d0MfQCUShq7JRXaM4KtQopZsq2vFv8bCq2yMaGrw1FgygUd03RyRDA==}
+    engines: {node: '>=0.8.0'}
+    hasBin: true
+    dev: true
