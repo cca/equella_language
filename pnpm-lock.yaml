@@ -1,19 +1,19 @@
 lockfileVersion: 5.4
 
 specifiers:
-  async: ^3.1.0
+  async: ^3.2.4
   properties: ^1.2.1
-  uglify-js: ^3.7.5
+  uglify-js: ^3.16.1
 
 devDependencies:
-  async: 3.2.2
+  async: 3.2.4
   properties: 1.2.1
-  uglify-js: 3.14.4
+  uglify-js: 3.16.1
 
 packages:
 
-  /async/3.2.2:
-    resolution: {integrity: sha512-H0E+qZaDEfx/FY4t7iLRv1W2fFI6+pyCeTw1uN20AQPiwqwM6ojPxHxdLv4z8hi2DtnW9BOckSspLucW7pIE5g==}
+  /async/3.2.4:
+    resolution: {integrity: sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==}
     dev: true
 
   /properties/1.2.1:
@@ -21,8 +21,8 @@ packages:
     engines: {node: '>=0.10'}
     dev: true
 
-  /uglify-js/3.14.4:
-    resolution: {integrity: sha512-AbiSR44J0GoCeV81+oxcy/jDOElO2Bx3d0MfQCUShq7JRXaM4KtQopZsq2vFv8bCq2yMaGrw1FgygUd03RyRDA==}
+  /uglify-js/3.16.1:
+    resolution: {integrity: sha512-X5BGTIDH8U6IQ1TIRP62YC36k+ULAa1d59BxlWvPUJ1NkW5L3FwcGfEzuVvGmhJFBu0YJ5Ge25tmRISqCmLiRQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     dev: true
