@@ -1,28 +1,41 @@
-lockfileVersion: 5.4
+lockfileVersion: '9.0'
 
-specifiers:
-  async: ^3.2.4
-  properties: ^1.2.1
-  uglify-js: ^3.17.4
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
-devDependencies:
-  async: 3.2.4
-  properties: 1.2.1
-  uglify-js: 3.17.4
+importers:
+
+  .:
+    devDependencies:
+      async:
+        specifier: ^3.2.4
+        version: 3.2.6
+      properties:
+        specifier: ^1.2.1
+        version: 1.2.1
+      uglify-js:
+        specifier: ^3.17.4
+        version: 3.19.3
 
 packages:
 
-  /async/3.2.4:
-    resolution: {integrity: sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==}
-    dev: true
+  async@3.2.6:
+    resolution: {integrity: sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==}
 
-  /properties/1.2.1:
+  properties@1.2.1:
     resolution: {integrity: sha512-qYNxyMj1JeW54i/EWEFsM1cVwxJbtgPp8+0Wg9XjNaK6VE/c4oRi6PNu5p7w1mNXEIQIjV5Wwn8v8Gz82/QzdQ==}
     engines: {node: '>=0.10'}
-    dev: true
 
-  /uglify-js/3.17.4:
-    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
+  uglify-js@3.19.3:
+    resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
-    dev: true
+
+snapshots:
+
+  async@3.2.6: {}
+
+  properties@1.2.1: {}
+
+  uglify-js@3.19.3: {}
