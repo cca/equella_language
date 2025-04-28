@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
-#
-# An example hook script to verify what is about to be committed.
-# Called by "git commit" with no arguments.  The hook should
-# exit with non-zero status after issuing an appropriate message if
-# it wants to stop the commit.
-#
-# To enable this hook, move it to .git/hooks
+# To enable this hook, copy it to .git/hooks
+# Make sure it's executable
 
 # Before we commit, edit the hash of the last commit into the langpack
 # subheading, which makes it easy to see that our changes applied.
